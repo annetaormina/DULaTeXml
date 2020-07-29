@@ -76,7 +76,7 @@ html {
 }
 
 body {
-  font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-family: Arial, sans-serif, 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
   line-height: 1.8;
 
   max-width: 80ch;
@@ -240,7 +240,7 @@ table.imageTable caption {
 }
 
 figcaption::before {
-	content: 'Figure ' attr(data-number) ': ';
+  /*content: 'Figure ' attr(data-number) ': ';*/
 }
 
 /* allow scroll on the x-axis */
@@ -508,4 +508,8 @@ h6 {
 		overflow-x: scroll;
 		max-width: 100%;
 	}
+}
+
+.ltx_runin + .ltx_para, .ltx_runin + .ltx_para p, .ltx_runin + p {
+	display: revert;
 }
